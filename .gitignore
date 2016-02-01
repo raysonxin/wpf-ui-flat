@@ -1,0 +1,6 @@
+*.baml
+*.pdb
+*.dll
+*.g.cs
+*.txt
+*.cache
