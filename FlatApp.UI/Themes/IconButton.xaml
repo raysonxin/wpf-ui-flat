@@ -1,0 +1,67 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:FlatApp.UI.Controls">
+    
+    <Style x:Key="IconButtonTextStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="TextAlignment" Value="Left"/>
+        <Setter Property="FontSize" Value="16"/>
+    </Style>
+
+    <Style x:Key="IconButtonTitleStyle" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource IconButtonTextStyle}">
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="TextAlignment" Value="Left"/>
+        <Setter Property="FontSize" Value="16"/>
+    </Style>
+    
+    <Style x:Key="IconButtonIconStyle" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource IconButtonTextStyle}">
+        <Setter Property="FontFamily" Value="pack://application:,,,/Fonts/#FontAwesome"/>
+        <Setter Property="TextAlignment" Value="Center"></Setter>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="Padding" Value="10"/>
+
+    </Style>
+
+
+    <Style TargetType="{x:Type local:IconButton}">
+        <Setter Property="Background" Value="{DynamicResource ThemeSolidBrush}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:IconButton}">
+                    <Border x:Name="border" Background="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path= Background}" 
+                                    Height="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Height}" 
+                                    CornerRadius="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=CornerRadius}" 
+                                    Width="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Width}">
+                        <StackPanel Orientation="Horizontal" x:Name="Container" 
+                                    Background="{TemplateBinding Background}" 
+                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                    Margin="{TemplateBinding Padding}">
+                            <TextBlock Text="{TemplateBinding Icon}" Style="{DynamicResource IconButtonIconStyle}"/>
+                            <TextBlock Text="{TemplateBinding Title}"  x:Name="IconBtnText" Style="{DynamicResource IconButtonTitleStyle}"/>
+                        </StackPanel>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Container" Property="Background" Value="{DynamicResource AccentSolidBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="Container" Property="Background" Value="#ff666666"/>
+                        </Trigger>
+                        <!--<DataTrigger Binding="{Binding Path=IsShowTitle}" Value="False">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=IsShowTitle}" Value="True">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>-->
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="#ffdedede"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,34 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:FlatApp.UI.Controls">
+
+
+   
+    
+    <ResourceDictionary.MergedDictionaries>
+
+        <ResourceDictionary Source="pack://application:,,,/FlatApp.UI;component/Styles/Colors.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/FlatApp.UI;component/Styles/Fonts.xaml" />
+
+        <ResourceDictionary Source="/FlatApp.UI;component/Themes/FlatWindow.xaml"/>
+        <ResourceDictionary Source="/FlatApp.UI;component/Themes/IconButton.xaml"/>
+        <ResourceDictionary Source="/FlatApp.UI;component/Themes/FlatIcon.xaml"/>
+        <ResourceDictionary Source="/FlatApp.UI;component/Themes/FlatButton.xaml"/>
+        <ResourceDictionary Source="/FlatApp.UI;component/Themes/FlatToggleButton.xaml"/>
+        <ResourceDictionary Source="/FlatApp.UI;component/Themes/ProgressRing.xaml"/>
+        <ResourceDictionary Source="/FlatApp.UI;component/Themes/BusyBox.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+
+    <Style x:Key="FlatIconStyle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{DynamicResource FontAwesome}"></Setter>
+        <!--<Setter Property="Foreground" Value="Red"/>-->
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+
+  
+</ResourceDictionary>

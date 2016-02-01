@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/FlatApp.UI;component/Styles/Controls.TextBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/FlatApp.UI;component/Styles/Controls.RichTextBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/FlatApp.UI;component/Styles/Controls.Password.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/FlatApp.UI;component/Styles/Controls.CheckBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/FlatApp.UI;component/Styles/Controls.Calendar.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/FlatApp.UI;component/Styles/Controls.DatePicker.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/FlatApp.UI;component/Styles/Controls.ProgressBar.xaml"/>
+        <!--<ResourceDictionary Source="/FlatApp.UI;component/Styles/Controls.TextBox.xaml"/>-->
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
