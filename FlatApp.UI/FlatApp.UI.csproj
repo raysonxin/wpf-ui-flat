@@ -55,10 +55,6 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Controls\CaptionButtons.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Styles\Colors.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -135,9 +131,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="Controls\BusyBox.cs" />
-    <Compile Include="Controls\CaptionButtons.xaml.cs">
-      <DependentUpon>CaptionButtons.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Controls\FlatButton.cs" />
     <Compile Include="Controls\FlatIcon.cs" />
     <Compile Include="Controls\FlatToggleButton.cs" />
@@ -156,6 +149,8 @@
     <Compile Include="Controls\ProgressRing.cs" />
     <Compile Include="Helper\ControlAttachProperty.cs" />
     <Compile Include="Helper\Converter.cs" />
+    <Compile Include="Helper\Extends.cs" />
+    <Compile Include="Helper\RelayCommand.cs" />
     <Compile Include="Helper\XamlHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

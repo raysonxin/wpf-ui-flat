@@ -1,6 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Color x:Key="BlackColor">#FF272727</Color>
+    <!--<Color x:Key="BlackColor">#FF272727</Color>
     <Color x:Key="WhiteColor">#FFFFFFFF</Color>
     
     <Color x:Key="ThemeColorR1">#FF272727</Color>
@@ -14,10 +14,24 @@
     <Color x:Key="InverseColor">#FFdedede</Color>
     <Color x:Key="AccentColor">#cc4b4b4b</Color>
     
-    <Color x:Key="ForegroundColor">#FFFFFFFF</Color>
+    --><!--<Color x:Key="ForegroundColor">#FFFFFFFF</Color>--><!--
     
     <SolidColorBrush x:Key="InverseSolidBrush" Color="{DynamicResource InverseColor}"/>
     <SolidColorBrush x:Key="ThemeSolidBrush" Color="{DynamicResource ThemeColor}"/>
     <SolidColorBrush x:Key="AccentSolidBrush" Color="{DynamicResource AccentColor}"/>
+    <SolidColorBrush x:Key="ForegroundSolidBrush" Color="{DynamicResource ForegroundColor}"/>-->
+
+    <!--Color-->
+    <Color x:Key="MainThemeColor">#FFEFF3F4</Color>
+    <Color x:Key="SubThemeColor">#FF292D30</Color>
+    <Color x:Key="ForegroundColor">#FFEAEEEF</Color>
+    <Color x:Key="BackgroundColor">#FFD8DCDF</Color>
+    <Color x:Key="BorderColor">#FF33373A</Color>
+    
+    <!--Solid Color Bursh-->
+    <SolidColorBrush x:Key="MainThemeSolidBrush" Color="{DynamicResource MainThemeColor}"/>
+    <SolidColorBrush x:Key="SubThemeSolidBrush" Color="{DynamicResource SubThemeColor}"/>
     <SolidColorBrush x:Key="ForegroundSolidBrush" Color="{DynamicResource ForegroundColor}"/>
+    <SolidColorBrush x:Key="BackgroundSolidBrush" Color="{DynamicResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="BorderSolidBrush" Color="{DynamicResource BorderColor}"/>
 </ResourceDictionary>
